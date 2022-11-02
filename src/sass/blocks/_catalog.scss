@@ -39,6 +39,12 @@
     }
     &__content {
         margin-top: 60px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         width: 300px;
@@ -46,6 +52,8 @@
         background: #FFFFFF;
         border: 2px solid #E8E8E8;
         padding: 20px 20px 26px 20px;
+        overflow: hidden;
+        margin-bottom: 20px;
         &__img {
             display: block;
             margin: 0 auto;
@@ -99,6 +107,68 @@
             font-weight: 700;
             font-size: 20px;
             color: #050505;
+        }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        } 
+        &__content {
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__list {
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            margin-bottom: 0;
+            transform: translateX(0%);
+            padding-right: 20px;
+            padding-left: 19px;
+            transition: 0.5s all;
+            list-style-type: none;
+            &_active {
+                transform: translateX(-100%);
+                margin-left: 0;
+            }
+            li {
+                position: relative;
+                margin-bottom: 20px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: #555555;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main_color;
+                    left: -14px;
+                    top: 8px;
+                }
+            }
+        }
+        &__back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: $main_color;
+            &:hover {
+                color: $main_color;
+            }
         }
     }
 }
