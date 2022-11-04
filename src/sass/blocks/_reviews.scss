@@ -1,0 +1,33 @@
+.reviews {
+    min-height: 1050px;
+    &__item {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        img {
+            width: 169px;
+            height: 169px;
+            margin-right: 60px;
+        }
+        &__descr {
+            max-width: 680px;
+            &__name {
+                font-weight: 700;
+                font-size: 18px;
+                color: #0D0D0D;
+            }
+            &__subname {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                color: #0D0D0D;
+                span {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #646464;
+                }
+            }
+        }
+    }
+
+}
