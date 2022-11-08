@@ -1,7 +1,10 @@
 .reviews {
     min-height: 1050px;
+    .title {
+        margin-bottom: 60px;
+    }
     &__item {
-        margin-top: 60px;
+        margin-bottom: 60px;
         display: flex;
         flex-direction: row;
         img {

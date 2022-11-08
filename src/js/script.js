@@ -4,7 +4,16 @@ const slider = tns({
   slideBy: 'page',
   autoplay: false,
   controls: false,
-  nav: false
+  nav: false,
+  navPosition: 'bottom',
+  responsive: {
+    376: {
+      nav: true,
+    },
+    768: {
+      nav: false,
+    },
+  }
 });
 
 document.querySelector('.prev').addEventListener('click', function () {
