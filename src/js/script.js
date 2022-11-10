@@ -5,13 +5,12 @@ const slider = tns({
   autoplay: false,
   controls: false,
   nav: false,
-  navPosition: 'bottom',
   responsive: {
     376: {
-      nav: true,
+      autoplay: true,
     },
-    768: {
-      nav: false,
+    992: {
+      autoplay: false,
     },
   }
 });

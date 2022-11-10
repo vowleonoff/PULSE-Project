@@ -2,10 +2,14 @@
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
+h1, h2 {
+    margin: 0;
+}
 .container {
     position: relative;
-    max-width: 950px;
+    max-width: 1010px;
     margin: 0 auto;
+    padding: 0 30px 0 30px;
 }
 @import 'blocks/promo';
 @import 'blocks/header';

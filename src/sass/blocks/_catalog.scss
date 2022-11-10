@@ -1,7 +1,10 @@
 .catalog {
     padding-bottom: 60px;
+    h2 {
+        margin-bottom: 0;
+    }
     &__tabs {
-        margin-top: 70px;
+        margin-top: 50px;
         list-style-type: none;
         display: flex;
         justify-content: center;
