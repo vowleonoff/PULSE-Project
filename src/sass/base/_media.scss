@@ -23,7 +23,6 @@
 }
 
 @media (max-width: 768px) {
-
     .advantages__item {
         &:first-child {
             display: none;
@@ -31,71 +30,46 @@
     }
 }
 
-/* @media (max-width: 576px) {
-    .container {
-        max-width: 400px;
-    }
-    .promo {
-        .header {
-            flex-direction: column;
-            &__logo {
-                width: 400px;
-                margin-bottom: 20px;
-            }
-            &__official {
-                font-size: 25px;
-                line-height: 35px;
-                margin-bottom: 20px;
-                span {
-                    font-size: 25px;
-                }
-            }
-            &__contacts {
-                align-items: center;
-                .header__phone {
-                    font-size: 25px;
-                }
-                button {
-                    width: 190px;
-                    height: 50px;
-                    font-size: 16px;
-                    margin-top: 10px;
-                }
-            }
-        }
-        &__wrapper {
-            align-items: center;
+@media (max-width: 576px) {
+    .header {
+        justify-content: space-around;
+        &__contacts {
+            margin-top: 20px;
         }
     }
-    .consultation {
-        .title_left {
-            text-align: center;
+    .tns-item {
+        img {
+            max-width: 350px;
         }
-        &__descr {
-            text-align: center;
-            font-size: 22px;
-        }
-        .feed-form {
-            margin: 0 auto;
-            margin-top: 30px;
-            justify-content: center;
-        }
-    }
-    .carousel {
-        display: none;
     }
     .catalog {
-        margin-top: 60px;
-        li {
-            width: 160px;
+        &__tabs {
+            flex-wrap: nowrap;
+        }
+        &__tab {
+            margin-top: 10px;
         }
     }
-    .reviews {
-        &__item {
-            flex-direction: column;
+    .reviews__item {
+        flex-wrap: wrap;
+        justify-content: center;
+        &__img {
+            margin: 0;
+            margin-left: 60px;
+        }
+        &__descr__name {
+            text-align: center;
+            margin-top: 15px;
+        }
+        &__descr__subname {
+            text-align: center;
+            span {
+                display: block;
+                text-align: center;
+            }
         }
     }
-} */
+}
 
 /* @media (max-width: 376px) {
     .title_left {
