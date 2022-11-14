@@ -44,10 +44,10 @@
     }
     .catalog {
         &__tabs {
-            flex-wrap: nowrap;
-        }
-        &__tab {
-            margin-top: 10px;
+            flex-wrap: wrap;
+            li {
+                margin-top: 10px;
+            }
         }
     }
     .reviews__item {
