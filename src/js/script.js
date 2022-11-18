@@ -78,12 +78,12 @@ $(document).ready(function(){
       },
       messages: {
         name: {
-          required: "Пожалуйства, введите свое имя",
+          required: "Пожалуйста, введите свое имя",
           minlength: jQuery.validator.format("Введите {0} символа!")
         },
-        phone: "Пожалуйства, введите свой номер телефон",
+        phone: "Пожалуйста, введите свой номер телефон",
         email: {
-          required: "Пожалуйства, введите свою почту",
+          required: "Пожалуйста, введите свою почту",
           email: "Правильный формат почты - name@domain.com"
         }
       }
@@ -93,4 +93,9 @@ $(document).ready(function(){
   validateForms('#consultation-form');
   validateForms('#consultation form');
   validateForms('#order form');
+
+
+  // masked input
+
+  $('input[name=phone]').mask("+7 (999) 999-99-99");
 });
