@@ -98,4 +98,44 @@ $(document).ready(function(){
   // masked input
 
   $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+  //mailer
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+
+    if(!$(this).valid()) { // Чтобы не отправлять пустые инпуты
+      return;
+    }
+
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      $('#consultation, #order').fadeOut(); // закрытие окон после исполнения команды
+      $('.overlay, #thanks').fadeIn('slow'); // появление спасибо
+
+      $('form').trigger('reset');
+    });
+    return false;
+  });
+
+  // pageup
+  $(window).scroll(function() {
+    if ($(this). scrollTop() > 1200) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+
+  // smooth scroll
+  $("a[href^='#']").click(function() {
+    const _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    return false;
+  });
+
 });
