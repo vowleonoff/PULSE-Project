@@ -138,4 +138,7 @@ $(document).ready(function(){
     return false;
   });
 
+  // wow.js animation
+  new WOW().init();
+
 });
