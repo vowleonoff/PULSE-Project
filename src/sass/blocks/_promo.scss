@@ -1,7 +1,20 @@
 .promo {
+    position: relative;
     min-height: 650px;
     padding: 21px 0 93px 0;
     background: url(../img/main.jpeg) center (center/cover) no-repeat;
+/*         &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0; 
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0, 0,.3); z-index: 2;
+        }
+    .container {
+        z-index: 3;
+    } */
     &__wrapper {
         display: flex;
         flex-direction: column;
