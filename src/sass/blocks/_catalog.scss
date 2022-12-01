@@ -114,6 +114,7 @@
         &__wrapper {
             display: flex;
             width: calc(200% + 40px);
+            min-height: 350px;
         } 
         &__content {
             width: 50%;
@@ -150,23 +151,23 @@
                 font-size: 14px;
                 line-height: 21px;
                 color: #555555;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    width: 5px;
-                    height: 5px;
-                    background-color: $main_color;
-                    left: -14px;
-                    top: 8px;
+                &:nth-child(-n+4) {
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main_color;
+                        left: -14px;
+                        top: 8px;
+                    }
                 }
+
             }
         }
         &__back {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(calc(-50% - 19px));
             display: block;
+            text-align: center;
             font-weight: 500;
             font-size: 14px;
             line-height: 14px;
