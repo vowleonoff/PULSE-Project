@@ -80,7 +80,10 @@
         }
         &__link {
             display: block;
-            margin-top: 10px;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
             font-weight: 500;
             font-size: 14px;
             text-align: center;
