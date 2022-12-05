@@ -70,9 +70,21 @@
         }
     }
 }
-
-/* @media (max-width: 376px) {
-    .title_left {
-        text-align: center;
+//iphone 13
+@media (max-width: 391px) {
+    .header {
+        &__official {
+            margin-top: 15px;
+        }
+        &__contacts {
+            margin-top: 15px;
+            align-items: center;
+        }
     }
-} */
+    .promo__wrapper {
+        align-items: center;
+        .promo__header {
+            font-size: 38px;
+        }
+    }
+}

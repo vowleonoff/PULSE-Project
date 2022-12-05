@@ -12,15 +12,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 382px;
+    max-width: 382px;
     min-height: 402px;
     background: #F2F2F2;
     padding: 35px 26px 40px 26px;
     text-align: center;
     &__close {
         position: absolute;
-        top: 0;
-        right: -40px;
+        top: -35px;
+        right: 5px;
         font-size: 41px;
         line-height: 21px;
         color: $main-color;
