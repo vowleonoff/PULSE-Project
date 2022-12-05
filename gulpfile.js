@@ -55,13 +55,9 @@ gulp.task('mailer', function() {
 });
 gulp.task('images', function() {
     return gulp.src("src/img/**/*")
-        .pipe(imagemin())
+/*         .pipe(imagemin()) */
         .pipe(gulp.dest('dist/img'));
 });
-/* gulp.task('favicon', function() {
-    return gulp.src("src/*.ico")
-        .pipe(gulp.dest('dist/'));
-}); */
 
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'fonts', 'icons', 'mailer', 'images'));
